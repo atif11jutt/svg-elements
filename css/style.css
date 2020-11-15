@@ -1,0 +1,136 @@
+    @font-face {
+  font-family: CaldinaBold;
+  src: url(fonts/Caldina%20Bold.ttf);
+}
+    @font-face {
+  font-family: CaldinaLightItalic;
+  src: url(fonts/Caldina%20Light%20Italic.ttf);
+}
+    *{
+        margin: 0;
+        padding: 0
+    }
+    body{
+        overflow-x: hidden;
+        color: #e6031f;
+    }
+    /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.header{
+   
+    position: sticky;
+    z-index:50;
+        margin-bottom: 7%;
+
+}
+.box1
+{
+width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 3rem;
+    z-index: -1;
+}
+    .box1 img{
+        width: 100%;
+        transform: scaleY(0.4) translateZ(0);
+        transform-origin: top;
+    }
+.border
+{
+  padding-top:2px;
+}
+.b
+   {
+       background-image: url("../images/201106_Transgourmet_Essence_mobile_Stellwand.svg"
+       );
+       
+
+}
+
+.small{
+    align-items: baseline;
+    
+    
+}
+
+    .right-big{
+        position: absolute;
+        right: -23%;
+        width: auto;
+        height: 170%;
+        top: 0.8%;
+    }
+
+    .left-big{
+        position: absolute;
+        left: -24%;
+        width: auto;
+        height: 130%;
+        top: 17.5%;
+    }
+    .cont-main{
+        width: 60%;
+        margin-left: 27%;
+        padding: 3.5% 0;
+        padding-bottom: 0;
+    }
+    .row{
+        display: flex;
+    }
+    
+    .heading1{
+        font-family: CaldinaBold;
+        font-size: 3.5rem;
+    }
+    
+    .heading2{
+        font-family: CaldinaLightItalic;
+        font-size: 3.5rem;
+        font-weight: 100;
+        padding-bottom: 4rem;
+        padding-top: 0.35rem;
+    }
+    
+    
+    .btn{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        background: #fff;
+        color: #e6031f;
+        border: 2px solid #e6031f;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        outline: none !important;
+        transition: 0.3s all;
+        
+    }
+    .btn:hover{
+        background: #e6031f;
+        color: #fff;
+    }
+/*
+    .row > div{
+        width: 50%;
+    }
+*/
