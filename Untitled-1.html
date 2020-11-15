@@ -8,6 +8,22 @@
 
 
 <style>
+    @font-face {
+  font-family: CaldinaBold;
+  src: url(css/fonts/Caldina%20Bold.ttf);
+}
+    @font-face {
+  font-family: CaldinaLightItalic;
+  src: url(css/fonts/Caldina%20Light%20Italic.ttf);
+}
+    *{
+        margin: 0;
+        padding: 0
+    }
+    body{
+        overflow-x: hidden;
+        color: #e6031f;
+    }
     /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -32,26 +48,29 @@
    
     position: sticky;
     z-index:50;
-    
+        margin-bottom: 7%;
+
 }
 .box1
 {
-    
-    width: 100%;
+width: 100%;
     position: absolute;
     left: 0px;
-  top: 0;
-  z-index:-1;
-    
-   
+    top: 3rem;
+    z-index: -1;
 }
+    .box1 img{
+        width: 100%;
+        transform: scaleY(0.4) translateZ(0);
+        transform-origin: top;
+    }
 .border
 {
   padding-top:2px;
 }
 .b
    {
-       background-image: url("201106_Transgourmet_Essence_mobile_Stellwand.svg"
+       background-image: url("images/201106_Transgourmet_Essence_mobile_Stellwand.svg"
        );
        
 
@@ -60,25 +79,82 @@
 .small{
     align-items: baseline;
     
+    
 }
 
+    .right-big{
+        position: absolute;
+        right: -23%;
+        width: auto;
+        height: 170%;
+        top: 0.8%;
+    }
 
-
-
+    .left-big{
+        position: absolute;
+        left: -24%;
+        width: auto;
+        height: 130%;
+        top: 17.5%;
+    }
+    .cont-main{
+        width: 60%;
+        margin-left: 27%;
+        padding: 3.5% 0;
+        padding-bottom: 0;
+    }
+    .row{
+        display: flex;
+    }
+    
+    .heading1{
+        font-family: CaldinaBold;
+        font-size: 3.5rem;
+    }
+    
+    .heading2{
+        font-family: CaldinaLightItalic;
+        font-size: 3.5rem;
+        font-weight: 100;
+        padding-bottom: 4rem;
+        padding-top: 0.35rem;
+    }
+    
+    
+    .btn{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        background: #fff;
+        color: #e6031f;
+        border: 2px solid #e6031f;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        outline: none !important;
+        transition: 0.3s all;
+        
+    }
+    .btn:hover{
+        background: #e6031f;
+        color: #fff;
+    }
+/*
+    .row > div{
+        width: 50%;
+    }
+*/
 </style>
 </head>
 <body>
     
             <div class="header">
-    <img src="201106_Transgourmet_Essence_Header.svg">
-    <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 410">
-      <defs><style>.cls-1{fill:#ebe8e0;}.cls-2{fill:#e1051e;}</style></defs>
-      <title>201106_Header</title>
-      </svg>
+    <img src="images/201106_Transgourmet_Essence_Header.svg">
+
       </div>
       <!------------------------div  class   a----------------------->
       <div   class="box1">
-          <img src="201106_Transgourmet_Essence_mobile_Decke.svg">
+          <img src="images/201106_Transgourmet_Essence_mobile_Decke.svg">
       </div>
 
       
@@ -86,22 +162,51 @@
       <!--div class b-->
 
                 <div class="b">
-                   <div class="small"> <img src="201106_Transgourmet_Essence_Stellwand_rechts_Rahmen.svg" width="500px"  height="600px" style="float: right;margin-right:auto ;">
-                    <img src="201106_Transgourmet_Essence_Stellwand_links.svg" width="400px"  height="700px" style="float: left;"></div>
+                   <div class="sideimages"> <img src="images/201106_Transgourmet_Essence_Stellwand_rechts_Rahmen.svg" class="right-big">
+                    <img src="images/201106_Transgourmet_Essence_Stellwand_links.svg" class="left-big"></div>
 
-                       <p  class="border" style="text-align:justify"> <img src="201106_Transgourmet_Essence_Stellwand_Schräge.svg" height="300" width="800" x="40" y="20" ></p>
-                       <h1><b>Barillas</b></h1>
+<!--                       <p  class="border" style="text-align:justify"> </p>-->
+                       
+                    
+                    <div class="cont-main">
+                        <div class="row">
+                            <div class="col-7">
+                                <h1 class="heading1">Barillas</h1>
+                                <h3 class="heading2">Masters of Pasta</h3>
+                            </div>
+                            <div class="col-5">
+                                <iframe src="https://www.youtube.com/embed/RVFCO1_-Qec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;height: auto;"></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-3" style="margin-right: 2rem">
+                                <button class="btn">Salesblate</button>
+                                <button class="btn">Flyer</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn">Sortiment</button>
+                                <button class="btn">Die vielfalt vonpesto endtadecken</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <img src="images/201106_Transgourmet_Essence_Stellwand_Schräge.svg" style="width: 100%;" >
                            
                     
-                          <div>  <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 835 1750"><defs>
+    </div>
+<!--
+                              <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 835 1750"><defs>
                                 
                               <style>.cls-1{fill:#f6f8fc;}</style></defs>
                               <title>Stellwand_mobilZeichenfläche 2</title><rect class="cls-1" width="835" height="1750"/></svg>
+-->
                             
                        
                       
                       
-                         <img src="201106_Transgourmet_Essence_Interior_Tisch.svg" height="150px" width="150px">
+                         <img src="images/201106_Transgourmet_Essence_Interior_Tisch.svg" height="150px" width="150px">
                        
                         
 </body>
