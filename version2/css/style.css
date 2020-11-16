@@ -34,28 +34,15 @@
     width: 100%;
     
   }
-  .right-big{
+  .sideimages{
       display: none;
   }
-  .left-big
-  {
-     visibility: hidden;
-     display:block;
-      
-      
-  }
-  .sidestand{
+
+  .sidestand, .blop2, .sid, .mid{
       visibility: hidden;
+      display: none
   }
-  .sid{
-      visibility: hidden;
-  }
-  .mid{
-      visibility: hidden;
-  }
-  .blop2{
-      visibility: hidden;
-  }
+  
 .table{ 
     min-width: 2px;
     min-height: 2px;
@@ -102,24 +89,41 @@ width: 100%;
     
 }
 
+.header, .sidestand, .blop2, .blop1, .sid, .mid, .end, .table{
+    pointer-events: none;
+    user-select: none
+  }
+
+.sideimages{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    margin-top: -90px;
+        pointer-events: none;
+}
+
     .right-big{
-            position: absolute;
+     position: absolute;
     right: -28%;
     width: auto;
-    height: 200%;
-    top: -9.5%;
+    height: 170%;
+    top: -32%;
+        max-width:45%;
     }
 
     .left-big{
-        position: absolute;
-        left: -24%;
-        width: auto;
-        height: 110%;
-        top: 19.5%;
+       position: absolute;
+    left: -24%;
+    width: auto;
+    height: 100%;
+    top: -9%;
+        max-width:45%;
     }
     .cont-main{
-    width: 68%;
-    margin-left: 19%;
+width: 65%;
+    margin-left: 22%;
     padding: 3.5% 0;
     padding-bottom: 0;
     }
@@ -234,11 +238,11 @@ width: 100%;
     background-color: #ccc;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 75vh;
+    min-height: 65vh;
 }
 .footer-out{
     padding-top: 45px;
-    height: 75vh;
+    height: 65vh;
     overflow: hidden;
     margin-top: -90px;
 }
@@ -248,8 +252,44 @@ width: 100%;
 
 /*  media quries  */
 
+@media screen and ( max-width: 1080px ) {
+    .cont-main {
+    width: 50% !important;
+    margin-left: 26% !important;
+    padding: 3.5% 0;
+    padding-bottom: 0;
+}
+    .heading1, .heading2{
+            font-size: 2.5rem !important;
+    }
+}
+
 @media screen and ( max-width: 768px ) {
     img.responsive { width: 10px; }
+    .cont-main {
+    width: 95% !important;
+    margin-left: 2.5% !important;
+    padding: 3.5% 0;
+    padding-bottom: 0;
+}
+    .footer-out, .footer-cont {
+    height: 40vh !important;
+            min-height: 40vh !important;
+}
+}
+
+
+@media screen and ( max-width: 768px ) {
+    .row{
+        flex-direction: column;
+            padding: 1rem 10px;
+    }
+    body{
+        text-align: center
+    }
+    .heading2 {
+        padding-bottom: 2rem !important;
+    }
 }
  
 @media screen and ( min-width: 768px) {
