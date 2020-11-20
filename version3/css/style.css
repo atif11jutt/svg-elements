@@ -1,0 +1,319 @@
+ @font-face {
+  font-family: CaldinaBold;
+  src: url(fonts/Caldina%20Bold.ttf);
+}
+    @font-face {
+  font-family: CaldinaLightItalic;
+  src: url(fonts/Caldina%20Light%20Italic.ttf);
+}
+    *{
+        margin: 0;
+        padding: 0
+    }
+    body{
+        overflow-x: hidden;
+        color: #e6031f;
+    }
+    /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    
+  }
+  .sideimages{
+      display: none;
+  }
+
+  .sidestand, .blop2, .sid, .mid{
+      visibility: hidden;
+      display: none
+  }
+  
+.table{ 
+    min-width: 2px;
+    min-height: 2px;
+}  
+}
+
+.logo img{
+        width: auto;
+    height: 100%;
+/*    margin-top: 13%;*/
+}
+.logo{
+    text-align: left !important; 
+}
+
+img.responsive { height: auto; }
+.header{
+   
+    position: sticky;
+    z-index:50;
+        margin-bottom: 6%;
+
+}
+.box1
+{
+width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 3rem;
+    z-index: -1;
+}
+    .box1 img{
+        width: 100%;
+        transform: scaleY(0.4) translateZ(0);
+        transform-origin: top;
+    }
+.border
+{
+  padding-top:2px;
+}
+.b
+   {
+       background-image: url("../images/201106_Transgourmet_Essence_mobile_Stellwand.svg");
+           position: relative;
+
+}
+
+.small{
+    align-items: baseline;
+    
+    
+}
+.logo{
+    top: 0%;
+    position: absolute;
+    left: 2rem;
+    height: 100%;
+}
+.header > img, .sidestand, .blop2, .blop1, .sid, .mid, .end, .table{
+    pointer-events: none;
+    user-select: none
+  }
+
+.sideimages{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    margin-top: -90px;
+        pointer-events: none;
+}
+
+    .right-big{
+position: absolute;
+    right: -26%;
+    width: auto;
+    height: 170%;
+    top: -30%;
+    max-width: 45%;
+    }
+
+    .left-big{
+       position: absolute;
+    left: -24%;
+    width: auto;
+    height: 110%;
+    top: -9%;
+        max-width:45%;
+    }
+    .cont-main{
+width: 65%;
+    margin-left: 22%;
+    padding: 3.5% 0;
+    padding-bottom: 0;
+    }
+    .row{
+        display: flex;
+    }
+    
+    .heading1{
+        font-family: CaldinaBold;
+        font-size: 3.5rem;
+    }
+    
+    .heading2{
+        font-family: CaldinaLightItalic;
+        font-size: 3.5rem;
+        font-weight: 100;
+        padding-bottom: 4rem;
+        padding-top: 0.35rem;
+    }
+    
+    
+    .btn{
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background: #fff;
+        color: #e6031f;
+        border: 2px solid #e6031f;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        outline: none !important;
+        transition: 0.3s all;
+        max-width: 330px;
+    }
+    .btn:hover{
+        background: #e6031f;
+        color: #fff;
+    }
+/*
+    .row > div{
+        width: 50%;
+    }
+*/
+
+.sidestand{
+    position: absolute;
+    right: -16%;
+    width: 35%;
+    top: -4%;   
+}
+.mid
+{
+    position: absolute;
+    right: 15%;
+    width: 42%;
+    top: 32%; 
+}
+.blop1{
+    position: absolute;
+    right: -7%;
+    width: 14%;
+    top: 32%;
+
+}
+.table {
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    top: 27%;
+    z-index: 3
+}
+.sid
+{
+    position: absolute;
+    left: 1%;
+    width: 20%;
+    height: 100%;
+    top: 22%;
+
+
+}
+
+.blop2
+{
+    
+position: absolute;
+    left: -8%;
+    width: 20%;
+    height: 100%;
+    top: 9%;
+    
+    
+}
+
+
+.end{
+    position: absolute;
+    width: 103%;
+    bottom: -2%;
+    z-index: 50; 
+
+}
+.bigbox
+{
+    
+    margin-bottom: -2rem;
+}
+
+/*footer*/
+
+.footer-cont{
+    position: sticky;
+    z-index: 3;
+    background-image: url(../images/201106_Transgourmet_Essence_mobile_Bodenlinien.svg);
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 55vh;
+}
+.footer-out{
+    padding-top: 30px;
+    height: 55vh;
+    overflow: hidden;
+    margin-top: -120px;
+}
+
+
+
+
+
+
+/*  media quries  */
+
+@media screen and ( max-width: 1080px ) {
+    .cont-main {
+    width: 50% !important;
+    margin-left: 26% !important;
+    padding: 3.5% 0;
+    padding-bottom: 0;
+}
+    .heading1, .heading2{
+            font-size: 2.5rem !important;
+            
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    img.responsive { width: 10px; }
+    .cont-main {
+    width: 95% !important;
+    margin-left: 2.5% !important;
+    padding: 3.5% 0;
+    padding-bottom: 0;
+}
+    .footer-out, .footer-cont {
+    height: 40vh !important;
+            min-height: 40vh !important;
+}
+}
+
+
+@media screen and ( max-width: 768px ) {
+    .row{
+        flex-direction: column;
+            padding: 1rem 10px;
+    }
+    body{
+        text-align: center
+    }
+    .heading2 {
+        padding-bottom: 2rem !important;
+    }
+
+}
+
+
+ 
+@media screen and ( min-width: 768px) {
+    img.responsive { width: 10px;}
+    }
